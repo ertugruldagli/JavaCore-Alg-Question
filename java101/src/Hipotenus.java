@@ -8,7 +8,7 @@ public class Hipotenus {
         a=scn.nextDouble();
         System.out.println("2. kenari gir: ");
         b=scn.nextDouble();
-
+// oldudgdsgsd
         t= Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
         System.out.println(t);
 
