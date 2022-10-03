@@ -13,7 +13,12 @@ public class Fighter {
         this.damage=damage;
         this.health=health;
         this.weight=weight;
-        this.dodge=dodge;
+        if(dodge>=0 && dodge<=100){
+            this.dodge=dodge;
+        }else{
+            this.dodge=0;
+        }
+
 
     }
 
@@ -21,6 +26,7 @@ public class Fighter {
         System.out.println(this.name + " => " + foe.name + " " + this.damage + " hasar vurdu " );
         if(foe.isDodge()) {
             System.out.println(foe.name + " gelen hasari blokladi!");
+            System.out.println("-----------------------------");
             return foe.health;
         }
         if(foe.health-this.damage<0){
