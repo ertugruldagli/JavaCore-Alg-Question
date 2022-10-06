@@ -18,8 +18,6 @@ public class Main {
         s1.addBulkExamNote(55,50,100);
         s1.isPass();
 
-        Students s2 =new Students("uras", "1745", "Istanbul", tarih,fizik,biyo);
-        s2.addBulkExamNote(55,50,35);
-        s2.isPass();
+
     }
 }
