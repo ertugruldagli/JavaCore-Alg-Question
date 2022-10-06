@@ -10,6 +10,8 @@ public class Students {
     String stuNo;
     String classes;
     double avarage;
+
+    double fzk;
     boolean isPass;
 
 
@@ -21,6 +23,7 @@ public class Students {
         this.c2=c2;
         this.c3=c3;
         this.avarage=0.0;
+        this.fzk=0.0;
         this.isPass=false;
     }
     void addBulkExamNote(int n1, int n2, int n3){
@@ -36,7 +39,9 @@ public class Students {
 
     }
     void isPass(){
-        this.avarage=(this.c1.note+this.c2.note+this.c3.note)/3.0;
+        this.fzk=(this.c2.note)*0.2;
+        this.avarage=(this.c1.note+this.fzk+this.c3.note)/3.0;
+
 
         if(this.avarage>55){
             System.out.println("Basarili bir sekilde gectiniz.");
@@ -48,7 +53,7 @@ public class Students {
 
     void printNote(){
         System.out.println(this.c1.name + " notu: " + this.c1.note);
-        System.out.println(this.c2.name + " notu: " + this.c2.note);
+        System.out.println(this.c2.name + " notu: " + this.fzk);
         System.out.println(this.c3.name + " notu: " + this.c3.note);
         System.out.println("Ortalamaniz: "+ this.avarage);
         System.out.println("--------------------------- ");

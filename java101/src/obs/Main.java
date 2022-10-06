@@ -15,7 +15,7 @@ public class Main {
 
 
         Students s1 =new Students("Ertu", "1748", "London", tarih,fizik,biyo);
-        s1.addBulkExamNote(55,50,100);
+        s1.addBulkExamNote(55,100,100);
         s1.isPass();
 
 
