@@ -14,12 +14,19 @@ public class Login {
             System.out.println("Sifre dogru giris yaptiniz.");
 
         }else{
-            System.out.println("Hatali Sifre!!!  daha sonra tekrar deneyiniz!");
+            System.out.println("Hatali Sifre!!!");
             System.out.println("Sifreyi sifirlamak ister misiniz? e/h");
-
             String e= input.nextLine();
-            if (e=="e"){
-                System.out.println();
+
+            if (e.equals("e")){
+                System.out.println("Yeni Sifreyi giriniz: ");
+                String pas= input.nextLine();
+                if (pas.equals(sifre)){
+                    System.out.println("Yeni Sifre Eski Sifre ile ayni olamaz!! ");
+                }else{
+                    System.out.println("Yeni sifre olusturuldu.");
+                }
+
             }else{
                 System.out.println("sifirlama islemi basarisiz..");
             }
